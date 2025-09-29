@@ -25,7 +25,17 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: app/frontend/package-lock.json
         
-    - run: npm install
-    - run: npm run build --if-present
-    - run: npm test
+    - name: Install Dependencies
+      working-directory: app/frontend
+      run: npm ci
+
+    - name: build package
+      working-directory: app/frontend
+      run: npm run build --if-present
+
+    - name: Run tests
+      working-directory: app/frontend
+      run: npm test
