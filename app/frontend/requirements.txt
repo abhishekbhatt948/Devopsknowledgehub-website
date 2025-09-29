@@ -1,0 +1,280 @@
+# DevopsGuidebyAB - Project Requirements
+# =====================================
+
+# FRONTEND DEPENDENCIES (React/TypeScript)
+# ----------------------------------------
+
+## Core Framework
+react@^18.3.1
+react-dom@^18.3.1
+typescript@^5.5.3
+
+## Build Tools
+vite@^5.4.2
+@vitejs/plugin-react@^4.3.1
+
+## Styling
+tailwindcss@^3.4.1
+autoprefixer@^10.4.18
+postcss@^8.4.35
+
+## Icons
+lucide-react@^0.344.0
+
+## Development Tools
+eslint@^9.9.1
+@eslint/js@^9.9.1
+eslint-plugin-react-hooks@^5.1.0-rc.0
+eslint-plugin-react-refresh@^0.4.11
+typescript-eslint@^8.3.0
+globals@^15.9.0
+
+## Type Definitions
+@types/react@^18.3.5
+@types/react-dom@^18.3.0
+@types/bcryptjs@^2.4.6
+@types/jsonwebtoken@^9.0.10
+@types/uuid@^10.0.0
+
+# BACKEND DEPENDENCIES (Node.js/Express)
+# --------------------------------------
+
+## Core Framework
+express@^4.18.2
+cors@^2.8.5
+
+## Database
+better-sqlite3@^12.2.0
+
+## Authentication & Security
+bcryptjs@^3.0.2
+jsonwebtoken@^9.0.2
+
+## Utilities
+uuid@^11.1.0
+
+## Development Tools
+nodemon@^3.0.2
+concurrently@^9.2.0
+
+# SYSTEM REQUIREMENTS
+# -------------------
+
+## Node.js Version
+# Minimum: Node.js 16.x
+# Recommended: Node.js 18.x or higher
+
+## Package Manager
+# npm 8.x or higher
+# OR yarn 1.22.x or higher
+
+## Operating System
+# Windows 10/11
+# macOS 10.15 or higher
+# Linux (Ubuntu 18.04+ or equivalent)
+
+# DEVELOPMENT ENVIRONMENT
+# -----------------------
+
+## Required Tools
+# Git 2.x
+# VS Code (recommended) or similar code editor
+# Modern web browser (Chrome, Firefox, Safari, Edge)
+
+## Optional Tools
+# Docker (for containerization examples)
+# Kubernetes CLI (kubectl) for K8s examples
+# Terraform CLI for infrastructure examples
+# Ansible for configuration management examples
+
+# PRODUCTION DEPLOYMENT
+# ---------------------
+
+## Database Options (for production migration)
+# PostgreSQL 13+ (recommended)
+# MySQL 8.0+
+# MariaDB 10.5+
+
+## Hosting Platforms
+# Vercel (frontend)
+# Netlify (frontend)
+# Railway (full-stack)
+# Heroku (full-stack)
+# AWS/GCP/Azure (full-stack)
+
+# INSTALLATION COMMANDS
+# ---------------------
+
+## Frontend Setup
+# npm install
+# npm run dev
+
+## Backend Setup
+# cd server
+# npm install
+# npm run dev
+
+## Full Stack Development
+# npm run dev:full
+
+# ENVIRONMENT VARIABLES
+# ---------------------
+
+## Required for Production
+# JWT_SECRET=your-jwt-secret-key
+# DATABASE_URL=your-database-connection-string
+# NODE_ENV=production
+
+## Optional
+# PORT=3001 (backend port)
+# VITE_API_URL=http://localhost:3001 (API base URL)
+
+# BROWSER COMPATIBILITY
+# ---------------------
+
+## Supported Browsers
+# Chrome 90+
+# Firefox 88+
+# Safari 14+
+# Edge 90+
+
+## Mobile Support
+# iOS Safari 14+
+# Chrome Mobile 90+
+# Samsung Internet 14+
+
+# FEATURES SUPPORTED
+# ------------------
+
+## DevOps Tools Covered
+# - Docker (containerization)
+# - Kubernetes (orchestration)
+# - Jenkins (CI/CD)
+# - Terraform (infrastructure as code)
+# - Ansible (configuration management)
+# - Helm (Kubernetes package manager)
+# - AWS DevOps services
+# - Monitoring & observability
+# - Security (DevSecOps)
+
+## Application Features
+# - User authentication & profiles
+# - Interactive tutorials
+# - Code playground with validation
+# - Progress tracking
+# - Achievement system
+# - Real-time code execution simulation
+# - Responsive design
+# - Dark theme UI
+
+# SECURITY CONSIDERATIONS
+# -----------------------
+
+## Authentication
+# - JWT tokens with expiration
+# - Bcrypt password hashing (10 rounds)
+# - Secure session management
+
+## Database
+# - SQL injection prevention
+# - Input validation & sanitization
+# - Prepared statements
+
+## API Security
+# - CORS configuration
+# - Rate limiting (recommended for production)
+# - Input validation middleware
+
+# PERFORMANCE OPTIMIZATIONS
+# -------------------------
+
+## Frontend
+# - Code splitting with Vite
+# - Tree shaking for smaller bundles
+# - Lazy loading of components
+# - Optimized images and assets
+
+## Backend
+# - SQLite for fast local development
+# - Connection pooling for production databases
+# - Efficient database queries with indexes
+# - Caching strategies (Redis recommended for production)
+
+# TESTING FRAMEWORK (Optional)
+# ----------------------------
+
+## Frontend Testing
+# @testing-library/react@^13.4.0
+# @testing-library/jest-dom@^5.16.5
+# vitest@^0.34.0
+
+## Backend Testing
+# jest@^29.7.0
+# supertest@^6.3.3
+
+# MONITORING & LOGGING (Production)
+# ---------------------------------
+
+## Application Monitoring
+# - Winston (logging)
+# - Morgan (HTTP request logging)
+# - PM2 (process management)
+
+## Error Tracking
+# - Sentry (error monitoring)
+# - LogRocket (session replay)
+
+# VERSION CONTROL
+# ---------------
+
+## Git Configuration
+# .gitignore (included)
+# - node_modules/
+# - .env
+# - *.log
+# - dist/
+# - build/
+# - .DS_Store
+
+# DOCUMENTATION
+# -------------
+
+## API Documentation
+# - Swagger/OpenAPI (recommended)
+# - Postman collections
+
+## Code Documentation
+# - JSDoc comments
+# - TypeScript interfaces
+# - README.md files
+
+# DEPLOYMENT CHECKLIST
+# --------------------
+
+## Pre-deployment
+# ✓ Environment variables configured
+# ✓ Database migrations run
+# ✓ SSL certificates installed
+# ✓ Domain name configured
+# ✓ CDN setup (optional)
+
+## Post-deployment
+# ✓ Health checks passing
+# ✓ Monitoring alerts configured
+# ✓ Backup strategy implemented
+# ✓ Performance testing completed
+
+# MAINTENANCE
+# -----------
+
+## Regular Updates
+# - Security patches
+# - Dependency updates
+# - Database backups
+# - Performance monitoring
+
+## Scaling Considerations
+# - Database connection pooling
+# - Load balancing
+# - Caching layer
+# - CDN for static assets
